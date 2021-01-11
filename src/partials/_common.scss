@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header ul{
+  height: 100%;
+  line-height: $headerHeight / 2;
+  display: flex;
+  justify-content: space-between;
+}
+header li{
+  list-style: none;
+}
+header a{
+  text-decoration: none;
+}
