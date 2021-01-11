@@ -28,6 +28,11 @@ header .header-top {
   margin: auto;
   height: 50px;
 }
+header .header-top::after {
+  display: table;
+  content: "";
+  clear: both;
+}
 header .header-top ul {
   float: right;
 }

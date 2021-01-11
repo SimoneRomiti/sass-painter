@@ -5,6 +5,9 @@ header{
     width: $wrapper;
     margin: auto;
     height: $headerHeight / 2;
+    &::after{
+      @include clearfix;
+    }
     ul{
       float: right;
       li{
