@@ -2,7 +2,7 @@ header{
   height: $headerHeight;
   background: #101010;
   .header-top{
-    width: 85%;
+    width: $wrapper;
     margin: auto;
     height: $headerHeight / 2;
     ul{
@@ -12,9 +12,21 @@ header{
       li{
         display: inline-block;
         list-style: none;
-        margin: 0 5px;
+        margin: 0 10px;
         a {
           text-decoration: none;
+          color: grey;
+          &:hover{
+            color: white;
+          }
+          i {
+            margin-right: 3px;
+            color: $blueColor;
+          }
+        }
+        select{
+          padding: 5px 2px;
+          border-radius: 5px;
         }
       }
     }
