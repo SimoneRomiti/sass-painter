@@ -1,0 +1,31 @@
+main{
+  .download{
+    height: 70vh;
+    width: 100%;
+    background-image: url('../img/hero.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    .trial-container{
+      width: 60%;
+      color: white;
+      padding-top: 30px;
+      &::after{
+        @include clearfix;
+      }
+      .trial{
+        float: right;
+        h2{
+          font-size: 35px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+        h3{
+          font-size: 25px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

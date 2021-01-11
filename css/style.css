@@ -11,7 +11,7 @@ header ul {
   justify-content: space-between;
 }
 
-header li {
+li {
   list-style: none;
 }
 
@@ -91,4 +91,36 @@ header .header-bottom nav li a {
 header .header-bottom nav li a i {
   color: grey;
   font-size: 10px;
+}
+
+main .download {
+  height: 70vh;
+  width: 100%;
+  background-image: url("../img/hero.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+main .download .trial-container {
+  width: 60%;
+  color: white;
+  padding-top: 30px;
+}
+main .download .trial-container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+main .download .trial-container .trial {
+  float: right;
+}
+main .download .trial-container .trial h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main .download .trial-container .trial h3 {
+  font-size: 25px;
+  font-weight: 400;
 }
