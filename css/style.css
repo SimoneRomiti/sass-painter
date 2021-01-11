@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100px;
+  background: #101010;
+}
+header .header-top {
+  width: 85%;
+  margin: auto;
+  height: 50px;
+}
+header .header-top ul {
+  float: right;
+  height: 100%;
+  line-height: 50px;
+}
+header .header-top ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+}
+header .header-top ul li a {
+  text-decoration: none;
+}
+header .header-bottom {
+  height: 50px;
 }
