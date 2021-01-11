@@ -1,11 +1,12 @@
 main{
+  height: $mainHeight;
   .download{
-    height: 70vh;
+    height: $mainHeight;
     width: 100%;
     background-image: url('../img/hero.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    @include backgroundSizeCover;
     display: flex;
     .trial-container{
       width: 60%;
@@ -17,13 +18,106 @@ main{
       .trial{
         float: right;
         h2{
-          font-size: 35px;
+          font-size: 30px;
           font-weight: 400;
           margin-bottom: 20px;
         }
         h3{
           font-size: 25px;
           font-weight: 400;
+          margin-bottom: 20px;
+        }
+        li{
+          margin: 20px 0;
+          i{
+            color: grey;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .download-trial{
+      width: 45%;
+      background: grey;
+      border-radius: 5px;
+      a{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text{
+          border-right: 2px solid white;
+          padding-right: 10px;
+        }
+        .image{
+          i{
+            color: white;
+            font-size: 25px;
+          }
+        }
+
+      }
+      &:hover{
+        @include background(background-color, grey, $my_percentage);
+      }
+    }
+    .buy{
+      margin-top: 20px;
+      margin-left: 40px;
+      padding: 0 20px;
+      height: calc(#{$mainHeight} - 20px);
+      width: 30%;
+      background: $backgroundBlack;
+      position: relative;
+      .price{
+        color: white;
+        font-size: 25px;
+        padding: 50px 0px 20px;
+      }
+      .download-text{
+        color: grey;
+      }
+      .money-back{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .buy-button{
+        display: block;
+        width: 30%;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 5px;
+        background: $blueColor;
+        &:hover{
+          @include background(background-color, $blueColor, $my_percentage);
+        }
+      }
+      .limited{
+        margin-top: 40px;
+        background-color: white;
+        padding: 10px;
+        h3{
+          color: #3F5253;
+        }
+        span{
+          display: block;
+          margin: 8px 0;
+          font-size: 14px;
+        }
+        a{
+          color: $blueColor;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        &:hover{
+          cursor: pointer;
         }
       }
     }

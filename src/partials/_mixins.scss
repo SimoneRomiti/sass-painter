@@ -3,3 +3,14 @@
   content: '';
   clear: both;
 }
+
+@mixin background($property, $color, $percentage){
+  #{$property}: lighten($color, $percentage);
+}
+
+@mixin backgroundSizeCover{
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}

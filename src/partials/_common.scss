@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 header ul{
   height: 100%;
   line-height: $headerHeight / 2;
@@ -13,6 +17,6 @@ header ul{
 li{
   list-style: none;
 }
-header a{
+a{
   text-decoration: none;
 }

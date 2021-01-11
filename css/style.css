@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 header ul {
   height: 100%;
   line-height: 50px;
@@ -15,13 +19,14 @@ li {
   list-style: none;
 }
 
-header a {
+a {
   text-decoration: none;
 }
 
 header {
   height: 100px;
   background: #101010;
+  font-size: 14px;
 }
 header .header-top {
   width: 85%;
@@ -46,6 +51,7 @@ header .header-top ul li a:hover {
   color: white;
 }
 header .header-top ul li a i {
+  font-size: 16px;
   margin-right: 3px;
   color: #009CFF;
 }
@@ -93,13 +99,19 @@ header .header-bottom nav li a i {
   font-size: 10px;
 }
 
+main {
+  height: 75vh;
+}
 main .download {
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   background-image: url("../img/hero.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   display: flex;
 }
 main .download .trial-container {
@@ -116,11 +128,101 @@ main .download .trial-container .trial {
   float: right;
 }
 main .download .trial-container .trial h2 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 main .download .trial-container .trial h3 {
   font-size: 25px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+main .download .trial-container .trial li {
+  margin: 20px 0;
+}
+main .download .trial-container .trial li i {
+  color: grey;
+  font-size: 14px;
+}
+main .download .download-trial {
+  width: 45%;
+  background: grey;
+  border-radius: 5px;
+}
+main .download .download-trial a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .download .download-trial a .text {
+  border-right: 2px solid white;
+  padding-right: 10px;
+}
+main .download .download-trial a .image i {
+  color: white;
+  font-size: 25px;
+}
+main .download .download-trial:hover {
+  background-color: #b3b3b3;
+}
+main .download .buy {
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 0 20px;
+  height: calc(75vh - 20px);
+  width: 30%;
+  background: #101010;
+  position: relative;
+}
+main .download .buy .price {
+  color: white;
+  font-size: 25px;
+  padding: 50px 0px 20px;
+}
+main .download .buy .download-text {
+  color: grey;
+}
+main .download .buy .money-back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+main .download .buy .buy-button {
+  display: block;
+  width: 30%;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+  background: #009CFF;
+}
+main .download .buy .buy-button:hover {
+  background-color: #66c4ff;
+}
+main .download .buy .limited {
+  margin-top: 40px;
+  background-color: white;
+  padding: 10px;
+}
+main .download .buy .limited h3 {
+  color: #3F5253;
+}
+main .download .buy .limited span {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+main .download .buy .limited a {
+  color: #009CFF;
+}
+main .download .buy .limited a:hover {
+  text-decoration: underline;
+}
+main .download .buy .limited:hover {
+  cursor: pointer;
 }

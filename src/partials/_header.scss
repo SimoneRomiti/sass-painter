@@ -1,6 +1,7 @@
 header{
   height: $headerHeight;
-  background: #101010;
+  background: $backgroundBlack;
+  font-size: 14px;
   .header-top{
     width: $wrapper;
     margin: auto;
@@ -18,6 +19,7 @@ header{
             color: white;
           }
           i {
+            font-size: 16px;
             margin-right: 3px;
             color: $blueColor;
           }
